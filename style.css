@@ -1,0 +1,129 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #e3f306;
+    color: #540bf3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #f207f2;
+    color: #def606;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #f006d1;
+    color: #eeea07;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+article {
+    flex: 1 1 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #f00bab;
+    border: 1px solid #f4e805;
+    padding: 20px;
+}
+
+article:last-child {
+    margin-right: 0;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+article p {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #e10ed3;
+    color: #ebe308;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    article {
+        margin-right: 0;
+    }
+}
